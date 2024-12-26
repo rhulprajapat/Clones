@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Spotify - Web Music Player</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+
+        <div class="left">
+            <div class="home m-1 p-1">
+                <div class="logo"><img class="invert logo" src="svg/logo.svg"></div>
+            </div>
+            <div class="library m-1 p-1">
+                <div class="heading bg-grey rounded flex m-1">
+                    <img class="invert" src="svg/playlist.svg">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety & Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header flex">
+                <div class="nav flex">
+                    <div class="ho">
+                        <img class="invert h" src="svg/home.svg" alt="home">
+                    </div>
+                    <div class="search-space">
+                        <div class="sea"> <img class="invert s" src="svg/search.svg" alt="search"></div>
+                        <div class="bar"><input placeholder="                          What do you want to play" class="bar-1"></div>
+                        <ul class="results-list"></ul>
+                    </div>
+                    
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+
+                </div>
+            </div>
+            <div class="browse-all">
+                <h1>Browse all</h1>
+                <div class="cardContainer">
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="infoup flex">
+                        <div class="songinfo"></div>
+                        <div class="songbuttons">
+                            <img width="30" id="previous" src="svg/previous.svg" alt="">
+                            <img width="30" id="play" src="svg/play.svg" alt="">
+                            <img width="30" id="next" src="svg/next.svg" alt="">
+                        </div>
+                        <div class="song-du">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/spo.js"></script>
+</body>
+
+</html>
