@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+body{
+    background-color: #020a40;
+    color: #ffffff;
+}
+
+header nav{
+    background-color: #43485e;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+
+form input[type="text"]{
+     flex-grow: 1;
+     margin-right: 10px;
+}
+
+form input[type="text"], button[type="submit"]{
+    border: none;
+    font-size: 19px;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+form button[type="submit"]{
+    background-color: #f55728;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover{
+    background-color: #be3f3f;
+}
+
+.prod-container{
+    text-align: center;
+    margin-top: 40vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    width: 80%; 
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+
+.prod{
+    background-color: #aeb2dd;
+    display: flex;
+    flex-direction: column;
+    color:#000000;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(78, 73, 73, 0.1);
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+} 
+
+.prod:hover{
+    transform: scale(1.01);
+}
+
+.prod img{
+    height: 300px;
+}
+
+.prod h3{
+    font-size: 23px;
+    margin: 5px 0 ;
+}
+
+.prod p{
+    font-size: 20px;
+    color: rgb(107, 107, 107);
+    margin: 5px 0;
+}
+
+.prod span{
+    font-weight: 600;
+}
+
+.prod button{
+    font-size: 20px;
+    font-weight: 450;
+    background-color: #f80707;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 18px auto;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.prod button:hover{
+    background-color: #d14646;
+}
+
+.prod-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;
+    font-size: 20px;
+    transform: translate(-50%,-50%);
+    background-color: #2434a7;
+    -webkit-transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
+
+.prod-details-content{
+    padding: 28px;
+}
+
+.prodName, .ingredientList, .instructions{
+    margin-bottom: 22px;
+}
+
+.prodName{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.ingredientList li{
+    margin-top: 11px;
+    margin-left: 22px;
+}
+
+.close-btn{
+    border: none;
+    font-size: 19px;
+    padding: 9px;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.close-btn:hover{
+    background-color: #dddcdc;
+}
+
+.instructions{
+    line-height: 32px;
+    white-space: pre-line;
+}
+
+.prod-details::-webkit-scrollbar{
+    width: 10px;
+}
+
+.prod-details::-webkit-scrollbar-thumb{
+    background-color: #afadad;
+    border-radius: 15px;
+    --webkit-border-radius:15px;
+}
+        /*Responsive Code*/
+/* @media screen and (max-width:600px) {
+    header nav{
+        flex-direction: column;
+    }
+
+    header nav form{
+
+    }
+} */
