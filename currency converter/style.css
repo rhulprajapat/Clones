@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #032368;
+}
+
+.converter{
+    background: #5b89c5;
+    border-radius: 9px;
+    backdrop-filter: blur(10px);
+    padding: 24px 30px;
+    text-align: center;
+}
+
+.converter h1{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.converter .input-container{
+    border: 2px solid #bbbbbd;
+    border-radius: 4.5px;
+    margin-block: 20px;
+}
+
+.converter .input-container input, .converter .input-container select{
+    width: 350px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+}
+
+.converter .input-container:focus-within{
+    border-color: #0d57a5;
+}
+
+.converter .arrow{
+    transform: rotate(90deg);
+    font-size: 45px;
+}
+
+.converter .result{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 23px;
+}
+
+@media screen and (max-width:420px) {
+    .converter{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .converter h1{
+        font-size: 23px;
+    }
+
+    .converter .input-container{
+        border: none;
+    }
+
+    .converter .input-container input, .converter .input-container select{
+        border: 1px solid #ccc;
+        margin-block: 4.5px;
+        width: 100%;
+    }
+}
