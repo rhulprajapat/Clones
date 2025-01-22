@@ -195,7 +195,7 @@ async function main() {
     //})
     currentSong.addEventListener("timeupdate", () => {
         const currentTimeFormatted = formatTime(Math.floor(currentSong.currentTime));
-        const durationFormatted = formatTime(Math.floor(currentSong.duration) || 0); // NaN को संभालने के लिए || 0
+        const durationFormatted = formatTime(Math.floor(currentSong.duration) || 0); 
         document.querySelector(".song-du").innerHTML = `${currentTimeFormatted} / ${durationFormatted}`;
         document.querySelector(".circle").style.left = (currentSong.currentTime / currentSong.duration) * 100 + "%"
     });
